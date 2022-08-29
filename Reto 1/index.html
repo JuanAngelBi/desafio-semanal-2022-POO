@@ -1,0 +1,36 @@
+<html>
+
+<script>
+    function Anagramas(palabra1, palabra2) {
+        var sonAnagramas = true;
+        var numCar, posEnPalabra2;
+
+        var palabra1 = prompt ("Ingrese la primera palabra")
+        var palabra2 = prompt ("Ingrese la segunda palabra")
+
+        if (palabra1.length != palabra2.length) {
+            sonAnagramas = false;
+        }
+        else {
+            numCar = 0;
+            while (sonAnagramas == true && (numCar < palabra1.length)) {
+                posEnPalabra2 = palabra2.indexOf(palabra1[numCar])
+                if (posEnCadena2 == -1) {
+                    sonAnagramas = false;
+                }
+                else {
+                    palabra2.split(posEnPalabra2);
+                }
+                numCar++;
+            }
+        }
+    }
+    if(sonAnagramas) {
+        var respuesta = "Si son anagramas"
+    }
+    else {
+        var respuesta = "No son anagramas"
+    }
+    return respuesta;
+</script>
+</html>

@@ -1,0 +1,14 @@
+{
+    let counter = 1;
+    texto3 = "fizz"
+    do {
+        if(counter % 3 == 0) {
+            counter == texto3;
+            console.log(texto3);
+        }
+        else {
+            console.log(counter);
+        }
+        counter++;
+    }   while (counter <= 100);
+}

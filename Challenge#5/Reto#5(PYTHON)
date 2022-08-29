@@ -1,0 +1,30 @@
+from turtle import width
+import cv2
+from PIL import Image
+
+#imagen: https://www.jhstoys.com/uploads/6/1/3/7/61377571/s737619424575262359_p1042_i943_w894.jpeg
+
+
+#USANDO PIL LIBRARY
+def fAspectRatio(pWidth, pHeight):
+    aspect_ratio = 0
+    if width > height:
+        aspect_ratio = width/height
+    else:
+        aspect_ratio = height/width
+    return aspect_ratio
+
+im = Image.open('https://www.jhstoys.com/uploads/6/1/3/7/61377571/s737619424575262359_p1042_i943_w894.jpeg')
+width, height = im.size
+
+print("La Relación de Aspecto de esta imágen es: {}".format(fAspectRatio(width, height)))
+
+#USANDO OpenCV
+
+#def fAspectRatio2(pH, pW):
+    #AR = 0
+
+#image = cv2.imread('https://www.jhstoys.com/uploads/6/1/3/7/61377571/s737619424575262359_p1042_i943_w894.jpeg')
+#(h, w, d) = image.shape
+
+#print("La Relación de Aspecto de esta imágen es: {}".format())

@@ -1,0 +1,22 @@
+def fArea(pPoligono):
+    area, base, altura = 0, 0, 0
+    if poligono == "t":
+        base = int(input("Ingrese la base del Triangulo: "))
+        altura = int(input("Ingrese la altura del Triangulo: "))
+        area = (base * altura)/2
+    elif poligono == "r":
+        base = int(input("Ingrese la base del Rectangulo: "))
+        altura = int(input("Ingrese la altura del Rectangulo: "))
+        area = base * altura
+    else:
+        base = int(input("Ingrese la base del Cuadrado: "))
+        altura = int(input("Ingrese la altura del Cuadrado: "))
+        area = base * altura
+    return area
+poligono = input("""Poligonos posibles:
+            (t) - Triángulo
+            (r) - Rectángulo
+            (c) - Cuadrado
+            ¿Qué polígono desea calcular el area? 
+            """)
+print("El area del polígono es: ", fArea(poligono))
