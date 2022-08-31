@@ -1,0 +1,25 @@
+let initialText = "Pablito clavo un clavito, que clavito clavo Pablito"
+
+let textArray = initialText.split(' ');
+
+let wordsList = {};
+
+textArray.forEach(function(word) {
+    word = clearString(word);
+    if (wordsList(word)) {
+        wordsList[word] += 1;
+    } else {
+        wordsList[word] = 1;
+    }
+});
+
+let wordsListSice = Object.key(wordsList).length;
+
+console.log(wordsList);
+console.log("Hay " + wordsListSice + " palabras unicas en el texto");
+console.log("Hay " + textArray.length + " palabras en el texto");
+
+function clearString(string) {
+    let replace = string.toLowerCase().replace(/[,.!;]/g, '');
+    return replace;
+}

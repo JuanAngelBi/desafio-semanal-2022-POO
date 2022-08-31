@@ -1,0 +1,2 @@
+cadena = input("Ingrese texto para invertir: ")
+print(cadena[::-1])

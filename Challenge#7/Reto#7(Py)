@@ -1,0 +1,25 @@
+#1. Obtener el texto
+#2. Partir el texto en porciones para obtener cada palabra
+#3. Limpiar cada palabra
+#4. Mostrar resultado
+
+#1:
+texto = input("Ingrese el texto para contar palabras repetidas: ")
+#2
+palabras = texto.split(" ")
+#3
+sacar = ",:;.\n!\"'"
+for caracter in sacar:
+    texto = texto.replace(caracter, "") #Esto sirve para sacar los caracteres de la cadena "sacar" en la cadena "texto"
+texto = texto.lower()
+diccionario_repeticiones = {}
+
+for palabra in palabras:
+    if palabra in diccionario_repeticiones:
+        diccionario_repeticiones[palabra] += 1
+    else:
+        diccionario_repeticiones[palabra] = 1
+#4
+for palabra in diccionario_repeticiones:
+    repeticion = diccionario_repeticiones[palabra]
+    print(f"La palabra '{palabra}' se repite {repeticion}")

@@ -1,0 +1,4 @@
+let numero = 50;
+let convertido = numero.toString(2);
+
+console.log(convertido);
