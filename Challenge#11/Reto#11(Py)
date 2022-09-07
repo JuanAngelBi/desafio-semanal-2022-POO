@@ -1,0 +1,22 @@
+#Recibir dos strings (str1 y str2)
+#Imprimir dos cadenas (out1 y out2)
+#out1 = (str1 - str2)
+#out2 = (str2 - str1)
+
+def fDevolverCadenas(pCad1, pCad2):
+    out1 = ""
+    out2 = ""
+    for c in pCad1:
+        if c not in pCad2:
+            out1 += c
+    for c2 in pCad2:
+        if c2 not in pCad1:
+            out2 += c2
+    print(f"Salida 1: {out1}")
+    print(f"Salida 2: {out2}")
+
+#cad1 = "hola comadre"
+#cad2 = "ala de ave"
+cad1 = input("Ingrese el primer texto: ")
+cad2 = input("Ingrese el segundo texto: ")
+fDevolverCadenas(cad1, cad2)

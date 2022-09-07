@@ -1,0 +1,15 @@
+def validExpresion(pCadena):
+    pila = []
+    validar = {"(": ")", "[": "]", "{": "}"}
+
+    for car in cadena:
+        if car in validar:
+            pila.append(car)
+        elif len(pila) == 0 or car != validar[pila.pop()]:  
+            #El .pop es para corroborar si el caracter analizado corresponde como valor de alguna clave del diccionario "validar"
+            return False
+    
+    return len(pila) == 0
+
+cadena = input("Ingrese la expresion:")
+print(validExpresion(cadena))
