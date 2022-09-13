@@ -15,3 +15,6 @@ class Palindromo {
         }
     }
 }
+
+let palabra = new Palindromo("ala")
+console.log(palabra.esPalindromo())
