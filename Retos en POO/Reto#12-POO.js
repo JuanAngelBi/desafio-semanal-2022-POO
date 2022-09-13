@@ -17,4 +17,6 @@ class Palindromo {
 }
 
 let palabra = new Palindromo("ala")
+let palabra2 = new Palindromo("pala")
 console.log(palabra.esPalindromo())
+console.log(palabra2.esPalindromo())
