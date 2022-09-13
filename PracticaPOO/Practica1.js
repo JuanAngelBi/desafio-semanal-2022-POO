@@ -5,7 +5,7 @@ class Person {                                  //Clase, es como un modelo de ob
     }   
 
     greet() {
-        return 'Hello, I am {} {}'.format(this.name, this.lastname)
+        return 'Hello, I am ' + this.name + ' ' + this.lastname
     }
 }
 
