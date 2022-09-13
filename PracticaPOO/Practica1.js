@@ -12,5 +12,5 @@ class Person {                                  //Clase, es como un modelo de ob
 const user = new Person('joe', 'ray')           //Se crean objetos
 const user2 = new Person('ryan', 'ray')
 
-console.log(user)
-console.log(user2)//1:14:40
+console.log(user.greet())
+console.log(user2.greet())
